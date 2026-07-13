@@ -4,79 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rutina Mamá y Bebé</title>
-<style>
-body{
-font-family:Arial,sans-serif;
-background:#eaf7ff;
-margin:20px;
-}
-.card{
-max-width:500px;
-margin:auto;
-background:white;
-padding:20px;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-h1{
-text-align:center;
-color:#4ba3e3;
-}
-h2{
-text-align:center;
-color:#6aa9d8;
-}
-label{
-display:block;
-margin:12px 0;
-font-size:18px;
-}
-button{
-width:100%;
-padding:15px;
-border:none;
-border-radius:15px;
-background:#70c5ff;
-color:white;
-font-size:18px;
-margin-top:20px;
-}
-.frase{
-margin-top:25px;
-text-align:center;
-color:#5a8db8;
-font-style:italic;
-}
-</style>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="card">
+<div class="contenedor">
 
-<h1>🧸 Rutina Mamá y Bebé</h1>
+<div class="tarjeta">
 
-<h2>Buenos días Carolina ☀️</h2>
+<div class="osito">🧸</div>
 
-<label><input type="checkbox"> 💊 Max Ella</label>
+<h1 id="saludo"></h1>
 
-<label><input type="checkbox"> 🍼 Ensure</label>
+<h2>Carolina 💙</h2>
 
-<label><input type="checkbox"> 💙 Omega 3-6-9</label>
+<p class="frase">
+Cada día construyes un hermoso futuro para tu bebé.
+</p>
 
-<label><input type="checkbox"> 💊 Paz OB (mañana)</label>
+<button>👶 Rutina del bebé</button>
 
-<label><input type="checkbox"> 💊 Paz OB (noche)</label>
+<button>🤱 Rutina de mamá</button>
 
-<button onclick="alert('¡Excelente trabajo Carolina! ❤️')">
-Terminé mi rutina
-</button>
+<button>💧 Agua del día</button>
 
-<div class="frase">
-"Cada día cuidas de dos corazones: el tuyo y el de tu bebé. ❤️"
+<button>📅 Calendario</button>
+
+<button>💊 Medicamentos</button>
+
 </div>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
