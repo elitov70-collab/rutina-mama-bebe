@@ -1,0 +1,10 @@
+{
+  "name": "Rutina Mamá y Bebé",
+  "short_name": "Mamá & Bebé",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#EAF8FF",
+  "theme_color": "#70C5FF",
+  "orientation": "portrait",
+  "icons": []
+}
