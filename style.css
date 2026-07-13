@@ -98,3 +98,32 @@ input[type="checkbox"]{
 transform:scale(1.4);
 margin-right:12px;
 }
+.menu{
+    margin-top:25px;
+}
+
+.opcion{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#f7fcff;
+    border-radius:18px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.emoji{
+    font-size:35px;
+}
+
+.opcion h3{
+    margin:0;
+    color:#4aa3ff;
+}
+
+.opcion p{
+    margin:5px 0 0;
+    color:#666;
+    font-size:14px;
+}
