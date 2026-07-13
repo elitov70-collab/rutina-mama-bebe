@@ -1,1 +1,62 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(180deg,#cfefff,#eaf8ff);
+}
 
+.contenedor{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.tarjeta{
+    background:white;
+    width:100%;
+    max-width:380px;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.osito{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#4aa3ff;
+    margin:0;
+}
+
+h2{
+    color:#666;
+    margin-top:8px;
+}
+
+.frase{
+    color:#777;
+    margin:20px 0;
+    font-style:italic;
+}
+
+button{
+    width:100%;
+    margin-top:12px;
+    padding:16px;
+    border:none;
+    border-radius:18px;
+    background:#70c5ff;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#4aa3ff;
+    transform:scale(1.02);
+}
