@@ -1,36 +1,51 @@
+// Saludo según la hora
 const saludo = document.getElementById("saludo");
 
 const hora = new Date().getHours();
 
 if (hora < 12) {
-    saludo.textContent = "☀️ Buenos días";
+  saludo.textContent = "☀️ Buenos días";
 } else if (hora < 19) {
-    saludo.textContent = "🌤️ Buenas tardes";
+  saludo.textContent = "🌤️ Buenas tardes";
 } else {
-    saludo.textContent = "🌙 Buenas noches";
+  saludo.textContent = "🌙 Buenas noches";
 }
+
+// Casillas
 const checks = document.querySelectorAll("input[type='checkbox']");
+const barra = document.getElementById("avance");
+const porcentaje = document.getElementById("porcentaje");
 
-function actualizarBarra(){
+// Cargar progreso guardado
+checks.forEach((check, index) => {
+    const guardado = localStorage.getItem("check_" + index);
+    if (guardado === "true") {
+        check.checked = true;
+    }
 
-const total = checks.length;
+    check.addEventListener("change", () => {
+        localStorage.setItem("check_" + index, check.checked);
+        actualizarBarra();
+    });
+});
 
-const marcados =
-document.querySelectorAll("input[type='checkbox']:checked").length;
+function actualizarBarra() {
 
-const porcentaje = Math.round((marcados/total)*100);
+    const total = checks.length;
 
-document.getElementById("avance").style.width = porcentaje+"%";
+    const marcados =
+        document.querySelectorAll("input[type='checkbox']:checked').length;
 
-document.getElementById("porcentaje").textContent =
-porcentaje+" % completado";
+    const progreso = Math.round((marcados / total) * 100);
+
+    barra.style.width = progreso + "%";
+
+    porcentaje.textContent = progreso + "% completado";
+
+    if (progreso === 100) {
+        alert("🎉 ¡Excelente trabajo, Carolina! Hoy completaste toda tu rutina. 💙");
+    }
 
 }
-
-checks.forEach(c=>{
-
-c.addEventListener("change",actualizarBarra);
-
-});
 
 actualizarBarra();
