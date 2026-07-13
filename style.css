@@ -127,3 +127,10 @@ margin-right:12px;
     color:#666;
     font-size:14px;
 }
+.seccion{
+    margin-top:20px;
+    background:white;
+    border-radius:18px;
+    padding:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
